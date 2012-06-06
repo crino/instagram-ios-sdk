@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		664E5D06153E8F2400967BB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664E5D05153E8F2400967BB1 /* Foundation.framework */; };
+		664E5D1E153E915800967BB1 /* Instagram.h in Headers */ = {isa = PBXBuildFile; fileRef = 664E5D1C153E915800967BB1 /* Instagram.h */; };
+		664E5D1F153E915800967BB1 /* Instagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E5D1D153E915800967BB1 /* Instagram.m */; };
+		664E5D26153E964300967BB1 /* IGRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 664E5D24153E964300967BB1 /* IGRequest.h */; };
+		664E5D27153E964300967BB1 /* IGRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E5D25153E964300967BB1 /* IGRequest.m */; };
+		664E5D6A153EB54900967BB1 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 664E5D5D153EB54900967BB1 /* JSON.h */; };
+		664E5D6B153EB54900967BB1 /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 664E5D5E153EB54900967BB1 /* NSObject+SBJSON.h */; };
+		664E5D6C153EB54900967BB1 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E5D5F153EB54900967BB1 /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		664E5D6D153EB54900967BB1 /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 664E5D60153EB54900967BB1 /* NSString+SBJSON.h */; };
+		664E5D6E153EB54900967BB1 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E5D61153EB54900967BB1 /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		664E5D6F153EB54900967BB1 /* SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 664E5D62153EB54900967BB1 /* SBJSON.h */; };
+		664E5D70153EB54900967BB1 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E5D63153EB54900967BB1 /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		664E5D71153EB54900967BB1 /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 664E5D64153EB54900967BB1 /* SBJsonBase.h */; };
+		664E5D72153EB54900967BB1 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E5D65153EB54900967BB1 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		664E5D73153EB54900967BB1 /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 664E5D66153EB54900967BB1 /* SBJsonParser.h */; };
+		664E5D74153EB54900967BB1 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E5D67153EB54900967BB1 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		664E5D75153EB54900967BB1 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 664E5D68153EB54900967BB1 /* SBJsonWriter.h */; };
+		664E5D76153EB54900967BB1 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 664E5D69153EB54900967BB1 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		664E5D02153E8F2400967BB1 /* libinstagram-ios-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libinstagram-ios-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		664E5D05153E8F2400967BB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		664E5D09153E8F2400967BB1 /* instagram-ios-sdk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "instagram-ios-sdk-Prefix.pch"; sourceTree = "<group>"; };
+		664E5D1C153E915800967BB1 /* Instagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instagram.h; sourceTree = "<group>"; };
+		664E5D1D153E915800967BB1 /* Instagram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instagram.m; sourceTree = "<group>"; };
+		664E5D24153E964300967BB1 /* IGRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGRequest.h; sourceTree = "<group>"; };
+		664E5D25153E964300967BB1 /* IGRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGRequest.m; sourceTree = "<group>"; };
+		664E5D2B153E98A500967BB1 /* IGConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGConnect.h; sourceTree = "<group>"; };
+		664E5D5D153EB54900967BB1 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		664E5D5E153EB54900967BB1 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		664E5D5F153EB54900967BB1 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		664E5D60153EB54900967BB1 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		664E5D61153EB54900967BB1 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		664E5D62153EB54900967BB1 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		664E5D63153EB54900967BB1 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		664E5D64153EB54900967BB1 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		664E5D65153EB54900967BB1 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		664E5D66153EB54900967BB1 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		664E5D67153EB54900967BB1 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		664E5D68153EB54900967BB1 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		664E5D69153EB54900967BB1 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		664E5CFF153E8F2400967BB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664E5D06153E8F2400967BB1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		664E5CF7153E8F2400967BB1 = {
+			isa = PBXGroup;
+			children = (
+				664E5D07153E8F2400967BB1 /* instagram-ios-sdk */,
+				664E5D04153E8F2400967BB1 /* Frameworks */,
+				664E5D03153E8F2400967BB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		664E5D03153E8F2400967BB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				664E5D02153E8F2400967BB1 /* libinstagram-ios-sdk.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		664E5D04153E8F2400967BB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				664E5D05153E8F2400967BB1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		664E5D07153E8F2400967BB1 /* instagram-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				664E5D5C153EB54900967BB1 /* JSON */,
+				664E5D2B153E98A500967BB1 /* IGConnect.h */,
+				664E5D1C153E915800967BB1 /* Instagram.h */,
+				664E5D1D153E915800967BB1 /* Instagram.m */,
+				664E5D24153E964300967BB1 /* IGRequest.h */,
+				664E5D25153E964300967BB1 /* IGRequest.m */,
+				664E5D08153E8F2400967BB1 /* Supporting Files */,
+			);
+			path = "instagram-ios-sdk";
+			sourceTree = "<group>";
+		};
+		664E5D08153E8F2400967BB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				664E5D09153E8F2400967BB1 /* instagram-ios-sdk-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		664E5D5C153EB54900967BB1 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				664E5D5D153EB54900967BB1 /* JSON.h */,
+				664E5D5E153EB54900967BB1 /* NSObject+SBJSON.h */,
+				664E5D5F153EB54900967BB1 /* NSObject+SBJSON.m */,
+				664E5D60153EB54900967BB1 /* NSString+SBJSON.h */,
+				664E5D61153EB54900967BB1 /* NSString+SBJSON.m */,
+				664E5D62153EB54900967BB1 /* SBJSON.h */,
+				664E5D63153EB54900967BB1 /* SBJSON.m */,
+				664E5D64153EB54900967BB1 /* SBJsonBase.h */,
+				664E5D65153EB54900967BB1 /* SBJsonBase.m */,
+				664E5D66153EB54900967BB1 /* SBJsonParser.h */,
+				664E5D67153EB54900967BB1 /* SBJsonParser.m */,
+				664E5D68153EB54900967BB1 /* SBJsonWriter.h */,
+				664E5D69153EB54900967BB1 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		664E5D00153E8F2400967BB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664E5D1E153E915800967BB1 /* Instagram.h in Headers */,
+				664E5D26153E964300967BB1 /* IGRequest.h in Headers */,
+				664E5D6A153EB54900967BB1 /* JSON.h in Headers */,
+				664E5D6B153EB54900967BB1 /* NSObject+SBJSON.h in Headers */,
+				664E5D6D153EB54900967BB1 /* NSString+SBJSON.h in Headers */,
+				664E5D6F153EB54900967BB1 /* SBJSON.h in Headers */,
+				664E5D71153EB54900967BB1 /* SBJsonBase.h in Headers */,
+				664E5D73153EB54900967BB1 /* SBJsonParser.h in Headers */,
+				664E5D75153EB54900967BB1 /* SBJsonWriter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		664E5D01153E8F2400967BB1 /* instagram-ios-sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 664E5D0F153E8F2400967BB1 /* Build configuration list for PBXNativeTarget "instagram-ios-sdk" */;
+			buildPhases = (
+				664E5CFE153E8F2400967BB1 /* Sources */,
+				664E5CFF153E8F2400967BB1 /* Frameworks */,
+				664E5D00153E8F2400967BB1 /* Headers */,
+				664E5D57153EB14900967BB1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "instagram-ios-sdk";
+			productName = "instagram-ios-sdk";
+			productReference = 664E5D02153E8F2400967BB1 /* libinstagram-ios-sdk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		664E5CF9153E8F2400967BB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IG;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = IQUII;
+			};
+			buildConfigurationList = 664E5CFC153E8F2400967BB1 /* Build configuration list for PBXProject "instagram-ios-sdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 664E5CF7153E8F2400967BB1;
+			productRefGroup = 664E5D03153E8F2400967BB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				664E5D01153E8F2400967BB1 /* instagram-ios-sdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		664E5D57153EB14900967BB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#SRCPATH=${SRCROOT}/${TARGETNAME}\n#BUILDDIR=${SRCROOT}/build\n#LIBOUTPUTDIR = ${SRCROOT}/lib/instagram-ios-sdk\n#\\rm -rf $LIBOUTPUTDIR\n#\\mkdir -p $LIBOUTPUTDIR\n#lipo -create $BUILDDIR/Rele\n#\\cp $SRCPATH/*.h $LIBOUTPUTDIR/\n#\\cp $SRCPATH/JSON/*.h $LIBOUTPUTDIR/\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		664E5CFE153E8F2400967BB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664E5D1F153E915800967BB1 /* Instagram.m in Sources */,
+				664E5D27153E964300967BB1 /* IGRequest.m in Sources */,
+				664E5D6C153EB54900967BB1 /* NSObject+SBJSON.m in Sources */,
+				664E5D6E153EB54900967BB1 /* NSString+SBJSON.m in Sources */,
+				664E5D70153EB54900967BB1 /* SBJSON.m in Sources */,
+				664E5D72153EB54900967BB1 /* SBJsonBase.m in Sources */,
+				664E5D74153EB54900967BB1 /* SBJsonParser.m in Sources */,
+				664E5D76153EB54900967BB1 /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		664E5D0D153E8F2400967BB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		664E5D0E153E8F2400967BB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		664E5D10153E8F2400967BB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/instagram_ios_sdk.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "instagram-ios-sdk/instagram-ios-sdk-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		664E5D11153E8F2400967BB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/instagram_ios_sdk.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "instagram-ios-sdk/instagram-ios-sdk-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		664E5CFC153E8F2400967BB1 /* Build configuration list for PBXProject "instagram-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				664E5D0D153E8F2400967BB1 /* Debug */,
+				664E5D0E153E8F2400967BB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		664E5D0F153E8F2400967BB1 /* Build configuration list for PBXNativeTarget "instagram-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				664E5D10153E8F2400967BB1 /* Debug */,
+				664E5D11153E8F2400967BB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 664E5CF9153E8F2400967BB1 /* Project object */;
+}
