@@ -13,3 +13,10 @@ Getting Started
 * Set **REDIRECT URI** to ig\[clientId\]://authorize .
 
 * Make sure you've edited your application's .plist file properly, so that your applicaition binds to the ig\[clientId\]:// URL scheme (where "\[clientId\]" is your Instagram application CLIENT ID).
+
+License
+===============
+
+Copyright (C) 2012 Cristiano Severini
+
+Distributed under the MIT License.
