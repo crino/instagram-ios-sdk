@@ -14,6 +14,17 @@ Getting Started
 
 * Make sure you've edited your application's .plist file properly, so that your applicaition binds to the ig\[clientId\]:// URL scheme (where "\[clientId\]" is your Instagram application CLIENT ID).
 
+* Capture instagram schema in your application
+``` objective-c
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [self.instagram handleOpenURL:url]; 
+}
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [self.instagram handleOpenURL:url];    
+}
+```
+
 License
 ===============
 
