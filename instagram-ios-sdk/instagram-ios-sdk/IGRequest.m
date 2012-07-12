@@ -166,7 +166,7 @@ NSString* const InstagramErrorDomain = @"instagramErrorDomain";
     id result = [jsonParser objectWithString:responseString];
     NSDictionary* meta = (NSDictionary*)[result objectForKey:@"meta"];
     if ( meta && [[meta objectForKey:@"code"] integerValue] == 200) {
-        result = [result objectForKey:@"data"];
+        //result = [result objectForKey:@"data"];
     } else {
         if (meta) {
             *error = [self formError:[[meta objectForKey:@"code"] integerValue]
