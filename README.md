@@ -19,7 +19,6 @@ Getting Started
 -(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     return [self.instagram handleOpenURL:url]; 
 }
-
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     return [self.instagram handleOpenURL:url];    
 }
