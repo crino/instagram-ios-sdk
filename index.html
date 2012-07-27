@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Instagram-ios-sdk by crino</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Instagram-ios-sdk</h1>
+        <p>Instagram SDK for iOS</p>
+
+        <p class="view"><a href="https://github.com/crino/instagram-ios-sdk">View the Project on GitHub <small>crino/instagram-ios-sdk</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/crino/instagram-ios-sdk/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/crino/instagram-ios-sdk/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/crino/instagram-ios-sdk">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Instagram iOS SDK</h1>
+
+<p>This open source iOS library allows you to integrate Instagram into your iOS application include iPhone, iPad and iPod touch.</p>
+
+<p>It's inspired by <a href="https://github.com/facebook/facebook-ios-sdk/">Facebook iOS SDK</a></p>
+
+<h1>Getting Started</h1>
+
+<ul>
+<li><p>Register your application on <a href="http://instagram.com/developer/clients/manage/">Instagram website</a>.</p></li>
+<li><p>Set <strong>REDIRECT URI</strong> to ig[clientId]://authorize .</p></li>
+<li><p>Make sure you've edited your application's .plist file properly, so that your applicaition binds to the ig[clientId]:// URL scheme (where "[clientId]" is your Instagram application CLIENT ID).</p></li>
+<li>
+<p>Capture instagram schema in your application</p>
+
+<div class="highlight"><pre><span class="k">-</span><span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nf">application:</span><span class="p">(</span><span class="n">UIApplication</span> <span class="o">*</span><span class="p">)</span><span class="nv">application</span> <span class="nf">handleOpenURL:</span><span class="p">(</span><span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span> <span class="p">{</span>
+<span class="k">return</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">instagram</span> <span class="nl">handleOpenURL:</span><span class="n">url</span><span class="p">];</span> 
+<span class="p">}</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nf">application:</span><span class="p">(</span><span class="n">UIApplication</span> <span class="o">*</span><span class="p">)</span><span class="nv">application</span> <span class="nf">openURL:</span><span class="p">(</span><span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span> <span class="nf">sourceApplication:</span><span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">sourceApplication</span> <span class="nf">annotation:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">annotation</span> <span class="p">{</span>
+<span class="k">return</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">instagram</span> <span class="nl">handleOpenURL:</span><span class="n">url</span><span class="p">];</span>    
+<span class="p">}</span>
+</pre></div>
+</li>
+</ul><h1>License</h1>
+
+<p>Copyright (C) 2012 Cristiano Severini</p>
+
+<p>Distributed under the MIT License.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/crino">crino</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
