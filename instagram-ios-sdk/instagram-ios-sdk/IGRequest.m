@@ -82,7 +82,7 @@ NSString* const InstagramErrorDomain = @"instagramErrorDomain";
                                                                                       NULL, /* allocator */
                                                                                       (__bridge CFStringRef)[params objectForKey:key],
                                                                                       NULL, /* charactersToLeaveUnescaped */
-                                                                                      (CFStringRef)@"!*'();:@&=+$,/?%#[]",
+                                                                                      (CFStringRef)@"!*'();:@&=$,/?%#[]",
                                                                                       kCFStringEncodingUTF8);
         
         [pairs addObject:[NSString stringWithFormat:@"%@=%@", key, escaped_value]];

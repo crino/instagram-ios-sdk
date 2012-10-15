@@ -41,7 +41,7 @@
         IGListViewController* viewController = [[IGListViewController alloc] init];
         [self.navigationController pushViewController:viewController animated:YES];
     } else {
-        [appDelegate.instagram authorize:nil];
+        [appDelegate.instagram authorize:[NSArray arrayWithObjects:@"comments", @"likes", nil]];
     }
 }
 
