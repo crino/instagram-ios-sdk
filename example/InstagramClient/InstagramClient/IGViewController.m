@@ -56,7 +56,7 @@
 
 -(void)login {
     IGAppDelegate* appDelegate = (IGAppDelegate*)[UIApplication sharedApplication].delegate;
-    [appDelegate.instagram authorize:nil];
+    [appDelegate.instagram authorize:[NSArray arrayWithObjects:@"comments", @"likes", nil]];
 }
 
 #pragma - IGSessionDelegate
