@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+$:.unshift('/Library/RubyMotion/lib')
+
+require 'motion/project'
+require 'bundler'
+Bundler.require
+
+Motion::Project::App.setup do |app|
+  app.name = 'InstagramRubyMotionClient'
+  app.icons = ['Icon.png', 'Icon@2x.png']
+  app.version = '1.0'
+
+  app.info_plist['CFBundleURLTypes'] = [
+    { 'CFBundleURLName' => 'com.devonblandin.InstagramRubyMotionClient',
+      'CFBundleURLSchemes' => ['igba45b28552e640ab91e5f5e5514883be'] }
+  ]
+
+  app.pods do
+    pod 'instagram-ios-sdk', '~> 0.0.1'
+  end
+end

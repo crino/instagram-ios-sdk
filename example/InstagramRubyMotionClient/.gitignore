@@ -1,0 +1,12 @@
+# Standard
+vendor/*
+bin/*
+build/*
+.bundle/*
+
+# RubyMotion
+.repl_history
+
+# OSX
+*._*
+*.DS_Store
