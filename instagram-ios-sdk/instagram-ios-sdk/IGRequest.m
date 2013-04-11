@@ -7,7 +7,6 @@
 //
 
 #import "IGRequest.h"
-#import "JSON.h"
 
 
 static NSString* kUserAgent = @"InstagramConnect";
@@ -23,7 +22,6 @@ NSString* const InstagramErrorDomain = @"instagramErrorDomain";
 @property (nonatomic, readwrite) IGRequestState state;
 
 @end
-
 
 @implementation IGRequest
 
@@ -159,11 +157,8 @@ NSString* const InstagramErrorDomain = @"instagramErrorDomain";
 }
 
 - (id)parseJsonResponse:(NSData*)data error:(NSError**)error {
+    id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
     
-    NSString* responseString = [[NSString alloc] initWithData:data
-                                                     encoding:NSUTF8StringEncoding];
-    SBJSON *jsonParser = [SBJSON new]; 
-    id result = [jsonParser objectWithString:responseString];
     NSDictionary* meta = (NSDictionary*)[result objectForKey:@"meta"];
     if ( meta && [[meta objectForKey:@"code"] integerValue] == 200) {
         //result = [result objectForKey:@"data"];

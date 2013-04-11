@@ -9,24 +9,13 @@
 #import "Instagram.h"
 
 
-static NSString* kDialogBaseURL = @"https://instagram.com/";
-//static NSString* kGraphBaseURL = @"https://graph.facebook.com/";
-static NSString* kRestserverBaseURL = @"https://api.instagram.com/v1/";
+static NSString* kDialogBaseURL         = @"https://instagram.com/";
+static NSString* kRestserverBaseURL     = @"https://api.instagram.com/v1/";
 
-
-//static NSString* kFBAppAuthURLScheme = @"fbauth";
-//static NSString* kFBAppAuthURLPath = @"authorize";
-//static NSString* kRedirectURL = @"igconnect://success";
-
-static NSString* kLogin = @"oauth/authorize";
-//static NSString* kSDK = @"ios";
-//static NSString* kSDKVersion = @"2";
+static NSString* kLogin                 = @"oauth/authorize";
 
 static NSString *requestFinishedKeyPath = @"state";
-static void *finishedContext = @"finishedContext";
-
-
-
+static void *finishedContext            = @"finishedContext";
 
 @interface Instagram ()
 
@@ -78,10 +67,6 @@ static void *finishedContext = @"finishedContext";
                params:(NSMutableDictionary *)params
            httpMethod:(NSString *)httpMethod
              delegate:(id<IGRequestDelegate>)delegate {
-    
-//    [params setValue:@"json" forKey:@"format"];
-//    [params setValue:kSDK forKey:@"sdk"];
-//    [params setValue:kSDKVersion forKey:@"sdk_version"];
     if ([self isSessionValid]) {
         [params setValue:self.accessToken forKey:@"access_token"];
     }
@@ -129,35 +114,16 @@ static void *finishedContext = @"finishedContext";
                                    [self getOwnBaseUrl], @"redirect_uri",
                                    nil];
     
-    NSString *loginDialogURL = [kDialogBaseURL stringByAppendingString:kLogin];
+    NSString *loginDialogURL    = [kDialogBaseURL stringByAppendingString:kLogin];
     
     if (self.scopes != nil) {
         NSString* scope = [self.scopes componentsJoinedByString:@"+"];
         [params setValue:scope forKey:@"scope"];
     }
     
-    // If the device is running a version of iOS that supports multitasking,
-    // try to obtain the access token from Safary
-    BOOL didOpenOtherApp = NO;
-//    UIDevice *device = [UIDevice currentDevice];
-//    if ([device respondsToSelector:@selector(isMultitaskingSupported)] && [device isMultitaskingSupported]) {
-        
-//        NSString *nextUrl = [self getOwnBaseUrl];
-//        [params setValue:nextUrl forKey:@"redirect_uri"];
-        
-        NSString *igAppUrl = [IGRequest serializeURL:loginDialogURL params:params];
-        didOpenOtherApp = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:igAppUrl]];
-//    }
-    
-// If single sign-on failed, open an inline login dialog. This will require the user to
-// enter his or her credentials.
-//    if (!didOpenOtherApp) {
-//        [_loginDialog release];
-//        _loginDialog = [[FBLoginDialog alloc] initWithURL:loginDialogURL
-//                                              loginParams:params
-//                                                 delegate:self];
-//        [_loginDialog show];
-//    }
+    BOOL didOpenOtherApp        = NO;
+    NSString *igAppUrl          = [IGRequest serializeURL:loginDialogURL params:params];
+    didOpenOtherApp             = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:igAppUrl]];
 }
 
 - (NSDictionary*)parseURLParams:(NSString *)query {
@@ -195,9 +161,7 @@ static void *finishedContext = @"finishedContext";
     NSString *accessToken = [params valueForKey:@"access_token"];
     
     // If the URL doesn't contain the access token, an error has occurred.
-    if (!accessToken) {
-//        NSString *error = [params valueForKey:@"error"];
-        
+    if (!accessToken) {        
         NSString *errorReason = [params valueForKey:@"error_reason"];
         
         BOOL userDidCancel = [errorReason isEqualToString:@"user_denied"];
@@ -205,17 +169,7 @@ static void *finishedContext = @"finishedContext";
         return YES;
     }
     
-//    // We have an access token, so parse the expiration date.
-//    NSString *expTime = [params valueForKey:@"expires_in"];
-//    NSDate *expirationDate = [NSDate distantFuture];
-//    if (expTime != nil) {
-//        int expVal = [expTime intValue];
-//        if (expVal != 0) {
-//            expirationDate = [NSDate dateWithTimeIntervalSinceNow:expVal];
-//        }
-//    }
-    
-    [self igDidLogin:accessToken/* expirationDate:expirationDate*/];
+    [self igDidLogin:accessToken];
     return YES;
 }
 
