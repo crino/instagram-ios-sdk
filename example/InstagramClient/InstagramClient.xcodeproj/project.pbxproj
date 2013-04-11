@@ -16,12 +16,6 @@
 		66669A8F15AE9E200028E882 /* IGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66669A8E15AE9E200028E882 /* IGViewController.m */; };
 		66669AB815AEA01A0028E882 /* IGRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 66669AA715AEA01A0028E882 /* IGRequest.m */; };
 		66669AB915AEA01A0028E882 /* Instagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 66669AA915AEA01A0028E882 /* Instagram.m */; };
-		66669ABA15AEA01A0028E882 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 66669AAD15AEA01A0028E882 /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		66669ABB15AEA01A0028E882 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 66669AAF15AEA01A0028E882 /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		66669ABC15AEA01A0028E882 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 66669AB115AEA01A0028E882 /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		66669ABD15AEA01A0028E882 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 66669AB315AEA01A0028E882 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		66669ABE15AEA01A0028E882 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 66669AB515AEA01A0028E882 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		66669ABF15AEA01A0028E882 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66669AB715AEA01A0028E882 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		66669AC615AEA4BF0028E882 /* IGListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66669AC515AEA4BF0028E882 /* IGListViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -229,12 +223,6 @@
 				66669A8F15AE9E200028E882 /* IGViewController.m in Sources */,
 				66669AB815AEA01A0028E882 /* IGRequest.m in Sources */,
 				66669AB915AEA01A0028E882 /* Instagram.m in Sources */,
-				66669ABA15AEA01A0028E882 /* NSObject+SBJSON.m in Sources */,
-				66669ABB15AEA01A0028E882 /* NSString+SBJSON.m in Sources */,
-				66669ABC15AEA01A0028E882 /* SBJSON.m in Sources */,
-				66669ABD15AEA01A0028E882 /* SBJsonBase.m in Sources */,
-				66669ABE15AEA01A0028E882 /* SBJsonParser.m in Sources */,
-				66669ABF15AEA01A0028E882 /* SBJsonWriter.m in Sources */,
 				66669AC615AEA4BF0028E882 /* IGListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +329,7 @@
 				66669A9715AE9E200028E882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
