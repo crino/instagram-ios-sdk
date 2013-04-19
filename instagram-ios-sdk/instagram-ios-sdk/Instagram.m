@@ -57,7 +57,12 @@ static void *finishedContext = @"finishedContext";
 
 - (void)dealloc {
     for (IGRequest* request in _requests) {
-        [_requests removeObserver:self forKeyPath:requestFinishedKeyPath];
+        @try {
+            [_requests removeObserver:self forKeyPath:requestFinishedKeyPath];
+        }
+        @catch (NSException *exception) {
+            NSLog(@"%@", exception);
+        }
     }
 }
 
@@ -71,6 +76,10 @@ static void *finishedContext = @"finishedContext";
     
     for (NSHTTPCookie* cookie in instagramCookies) {
         [cookies deleteCookie:cookie];
+    }
+
+    if ([self.sessionDelegate respondsToSelector:@selector(igSessionInvalidated)]) {
+        [self.sessionDelegate igSessionInvalidated];
     }
 }
 
@@ -101,10 +110,14 @@ static void *finishedContext = @"finishedContext";
         IGRequest* _request = (IGRequest*)object;
         IGRequestState requestState = [_request state];
         if (requestState == kIGRequestStateError) {
-            [self invalidateSession];
-            if ([self.sessionDelegate respondsToSelector:@selector(igSessionInvalidated)]) {
-                [self.sessionDelegate igSessionInvalidated];
+            NSString *errType = (NSString *)[[_request.error userInfo] objectForKey:@"error_type"];
+            if (errType && [errType isEqualToString:@"OAuthAccessTokenException"]) {
+                [self logout];
             }
+//            [self invalidateSession];
+//            if ([self.sessionDelegate respondsToSelector:@selector(igSessionInvalidated)]) {
+//                [self.sessionDelegate igSessionInvalidated];
+//            }
         }
         if (requestState == kIGRequestStateComplete || requestState == kIGRequestStateError) {
             [_request removeObserver:self forKeyPath:requestFinishedKeyPath];
