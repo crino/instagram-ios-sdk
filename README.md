@@ -28,11 +28,11 @@ The library 1.1.0 and higher requires either iOS 5.0 and above.
 
 For compatibility with iOS 4.3, use the latest 1.0.0 release.
 
-### Creators
+## Creators
 
 instagram-sdk-ios was created by [Cristiano Severini](https://github.com/crino/) .
 
-## Credits
+### Credits
 
 [List of contributors](https://github.com/crino/instagram-ios-sdk/graphs/contributors).
 
