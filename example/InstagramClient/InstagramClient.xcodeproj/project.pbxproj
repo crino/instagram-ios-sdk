@@ -37,19 +37,6 @@
 		66669AA715AEA01A0028E882 /* IGRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGRequest.m; sourceTree = "<group>"; };
 		66669AA815AEA01A0028E882 /* Instagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instagram.h; sourceTree = "<group>"; };
 		66669AA915AEA01A0028E882 /* Instagram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instagram.m; sourceTree = "<group>"; };
-		66669AAB15AEA01A0028E882 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
-		66669AAC15AEA01A0028E882 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
-		66669AAD15AEA01A0028E882 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
-		66669AAE15AEA01A0028E882 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
-		66669AAF15AEA01A0028E882 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
-		66669AB015AEA01A0028E882 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
-		66669AB115AEA01A0028E882 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
-		66669AB215AEA01A0028E882 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
-		66669AB315AEA01A0028E882 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
-		66669AB415AEA01A0028E882 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
-		66669AB515AEA01A0028E882 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
-		66669AB615AEA01A0028E882 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
-		66669AB715AEA01A0028E882 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		66669AC415AEA4BF0028E882 /* IGListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGListViewController.h; sourceTree = "<group>"; };
 		66669AC515AEA4BF0028E882 /* IGListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,30 +116,9 @@
 				66669AA715AEA01A0028E882 /* IGRequest.m */,
 				66669AA815AEA01A0028E882 /* Instagram.h */,
 				66669AA915AEA01A0028E882 /* Instagram.m */,
-				66669AAA15AEA01A0028E882 /* JSON */,
 			);
 			name = "instagram-ios-sdk";
 			path = "../../instagram-ios-sdk/instagram-ios-sdk";
-			sourceTree = "<group>";
-		};
-		66669AAA15AEA01A0028E882 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				66669AAB15AEA01A0028E882 /* JSON.h */,
-				66669AAC15AEA01A0028E882 /* NSObject+SBJSON.h */,
-				66669AAD15AEA01A0028E882 /* NSObject+SBJSON.m */,
-				66669AAE15AEA01A0028E882 /* NSString+SBJSON.h */,
-				66669AAF15AEA01A0028E882 /* NSString+SBJSON.m */,
-				66669AB015AEA01A0028E882 /* SBJSON.h */,
-				66669AB115AEA01A0028E882 /* SBJSON.m */,
-				66669AB215AEA01A0028E882 /* SBJsonBase.h */,
-				66669AB315AEA01A0028E882 /* SBJsonBase.m */,
-				66669AB415AEA01A0028E882 /* SBJsonParser.h */,
-				66669AB515AEA01A0028E882 /* SBJsonParser.m */,
-				66669AB615AEA01A0028E882 /* SBJsonWriter.h */,
-				66669AB715AEA01A0028E882 /* SBJsonWriter.m */,
-			);
-			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
