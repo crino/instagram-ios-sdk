@@ -86,7 +86,7 @@ NSString* const InstagramErrorDomain = @"instagramErrorDomain";
         [pairs addObject:[NSString stringWithFormat:@"%@=%@", key, escaped_value]];
     }
     NSString* query = [pairs componentsJoinedByString:@"&"];
-    
+    NSLog(@"URL: %@", [NSString stringWithFormat:@"%@%@%@", baseUrl, queryPrefix, query]);
     return [NSString stringWithFormat:@"%@%@%@", baseUrl, queryPrefix, query];
 }
 
@@ -182,6 +182,7 @@ NSString* const InstagramErrorDomain = @"instagramErrorDomain";
     if ([_delegate respondsToSelector:@selector(request:didFailWithError:)]) {
         [_delegate request:self didFailWithError:error];
     }
+    self.error = error;
     self.state = kIGRequestStateError;
 }
 
@@ -278,6 +279,7 @@ NSString* const InstagramErrorDomain = @"instagramErrorDomain";
     self.responseText = nil;
     self.connection = nil;
     
+    self.error = error;
     self.state = kIGRequestStateError;
 }
 
