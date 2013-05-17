@@ -22,7 +22,7 @@ static void *finishedContext            = @"finishedContext";
 @property(nonatomic, strong) NSArray* scopes;
 @property(nonatomic, strong) NSString* clientId;
 
--(void)authorizeWithSafary;
+-(void)authorizeWithSafari;
 
 @end
 
@@ -120,7 +120,7 @@ static void *finishedContext            = @"finishedContext";
 /**
  * A private function for opening the authorization dialog.
  */
-- (void)authorizeWithSafary {
+- (void)authorizeWithSafari {
     NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                    self.clientId, @"client_id",
                                    @"token", @"response_type",
@@ -156,7 +156,7 @@ static void *finishedContext            = @"finishedContext";
 -(void)authorize:(NSArray *)scopes {
     self.scopes = scopes;
     
-    [self authorizeWithSafary];
+    [self authorizeWithSafari];
 }
 
 - (BOOL)handleOpenURL:(NSURL *)url {
