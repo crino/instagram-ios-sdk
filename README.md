@@ -1,10 +1,10 @@
-##Instagram iOS SDK
+## Instagram iOS SDK
 
 This open source iOS library allows you to integrate Instagram into your iOS application include iPhone, iPad and iPod touch.
 
 It's inspired by [Facebook iOS SDK](https://github.com/facebook/facebook-ios-sdk/)
 
-##Getting Started
+## Getting Started
 
 * Register your application on [Instagram website](http://instagram.com/developer/clients/manage/).
 
@@ -22,7 +22,7 @@ It's inspired by [Facebook iOS SDK](https://github.com/facebook/facebook-ios-sdk
 }
 ```
 
-##Requirements
+## Requirements
 
 The library 1.1.0 and higher requires either iOS 5.0 and above.
 
@@ -36,7 +36,7 @@ instagram-sdk-ios was created by [Cristiano Severini](https://github.com/crino/)
 
 [List of contributors](https://github.com/crino/instagram-ios-sdk/graphs/contributors).
 
-##License
+## License
 
 Copyright (C) 2012 [Cristiano Severini](https://github.com/crino/)
 
